@@ -19,5 +19,54 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    transform: translateX(-50%);
+}
+.bar{
+    height: 10px;
+    width: 10px;
+    border: 2px solid rgb(82, 82, 232);
+    background-color: rgb(82, 82, 232);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: all .4s ease;
+}
+.bar:hover{
 
+}
 
+input[name='r']{
+    position: absolute;
+    visibility: hidden;
+}
+
+.images{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+#r4:checked ~ .s1{
+    margin-left: -75%;
+}
